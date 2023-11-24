@@ -1,7 +1,11 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+function myFunction(param: number | string) {
+  if (typeof(param) == "number" || typeof(param) == "string") {
+    let result = (param as any) + 100;
+    console.log("My result: " + result);
+  } else {
+   throw ("Expected a number or a string: " + param);
+  }
+}
 
-import { AppModule } from './app/app.module';
-
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+myFunction(1);
+myFunction("London");
