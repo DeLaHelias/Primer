@@ -150,3 +150,6 @@ function writeCity(f: () => string) {
 
 writeCity(getUKCapital);
 writeCity(() => "Paris");
+
+let myCity = "Rome";
+writeCity(() => myCity);
