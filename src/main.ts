@@ -149,3 +149,4 @@ function writeCity(f: () => string) {
 }
 
 writeCity(getUKCapital);
+writeCity(() => "Paris");
