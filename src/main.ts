@@ -117,8 +117,8 @@
 
 /* ============================================ */
 
-function writeValue(val?: string) {
-  console.log(`Value: ${val ?? "Fallback value"}`);
+function writeValue(val: string = "Default value") {
+  console.log(`Value: ${val}`);
 }
 
 writeValue("London");
