@@ -127,13 +127,25 @@
 
 /* ============================================ */
 
-function composeString(val: string) : string {
-  return `Composed string: ${val}`;
+// function composeString(val: string) : string {
+//   return `Composed string: ${val}`;
+// }
+
+// function writeValue(val?: string) {
+//   console.log(composeString(val ?? "Fallback value"));
+// }
+
+// writeValue("London");
+// writeValue();
+
+/* ============================================ */
+
+function getUKCapital() : string {
+  return "London";
 }
 
-function writeValue(val?: string) {
-  console.log(composeString(val ?? "Fallback value"));
+function writeCity(f: () => string) {
+  console.log(`City: ${f()}`);
 }
 
-writeValue("London");
-writeValue();
+writeCity(getUKCapital);
