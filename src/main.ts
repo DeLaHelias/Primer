@@ -116,3 +116,10 @@
 // console.log(`Result 2: ${result2}`);
 
 /* ============================================ */
+
+function writeValue(val: string | null) {
+  console.log(`Value: ${val ?? "Fallback value"}`);
+}
+
+writeValue("London");
+writeValue(null);
