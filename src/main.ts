@@ -140,16 +140,20 @@
 
 /* ============================================ */
 
-function getUKCapital() : string {
-  return "London";
-}
+// function getUKCapital() : string {
+//   return "London";
+// }
 
-function writeCity(f: () => string) {
-  console.log(`City: ${f()}`);
-}
+// function writeCity(f: () => string) {
+//   console.log(`City: ${f()}`);
+// }
 
-writeCity(getUKCapital);
-writeCity(() => "Paris");
+// writeCity(getUKCapital);
+// writeCity(() => "Paris");
 
-let myCity = "Rome";
-writeCity(() => myCity);
+// let myCity = "Rome";
+// writeCity(() => myCity);
+
+/* ============================================ */
+
+let myArray = [];
